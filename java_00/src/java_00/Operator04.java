@@ -14,16 +14,37 @@ public class Operator04 {
 		 * 결과물 예시 : 가져오신 동물은 소이므로, 스테이크을(를) 요리하겠습니다.
 		 * 
 		 */
-		int animalNum = 2;
-		String animal = "";
-		String animalResult = "";
+		
+		
+		int animalNum=1;
+		
+		String animal="";
+		String animalResult="";
 		
 		animal = (animalNum == 1) ? "닭" : "소";
-		animalResult = (animal == "닭") ? "치킨" : "스테이크";
+		animalResult = (animal=="닭") ? "치킨" : "스테이크";
 		
-		System.out.println("가져오신 동물은 " + animal + "이므로, " + animalResult + "을(를) 요리하겠습니다.");
-		System.out.println();
 		
+		System.out.println("가져오신 동물은"+ animal + "이므로," + animalResult+"를 요리하겠습니다.");
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		int animalNum = 2;
+//		String animal = "";
+//		String animalResult = "";
+//		
+//		animal = (animalNum == 1) ? "닭" : "소";
+//		animalResult = (animal == "닭") ? "치킨" : "스테이크";
+//		
+//		System.out.println("가져오신 동물은 " + animal + "이므로, " + animalResult + "을(를) 요리하겠습니다.");
+//		System.out.println();
+//		
 		
 		
 		
@@ -36,14 +57,28 @@ public class Operator04 {
 		 * 결과물 예시 : 입력하신 숫자 8은(는) 짝수입니다.
 		 * 
 		 */
-
-		int num = 3;
+		
+		
+		int num = 2;
+		
 		String result = "";
 		
-		result = (num % 2 == 0) ? "짝수" : "홀수";
+		result =(num % 2 == 0) ?"짝수":"홀수";
 		
-		System.out.println("입력하신 숫자 " + num + "은(는) " + result + "입니다.");
+		System.out.println("입력하신 숫자 " + num + "은 "+ result +"입니다.");		
 		
+		
+		
+		
+		
+
+//		int num = 3;
+//		String result = "";
+//		
+//		result = (num % 2 == 0) ? "짝수" : "홀수";
+//		
+//		System.out.println("입력하신 숫자 " + num + "은(는) " + result + "입니다.");
+//		
 		/*
 		 * [ 평균 구하기 ]
 		 * 

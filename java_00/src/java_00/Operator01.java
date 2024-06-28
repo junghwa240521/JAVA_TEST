@@ -65,8 +65,8 @@ public class Operator01 {
 		double d = 3;
 		
 		// 동일한 연산자라고하더라도 피연산자의 자료형에 따라 결과가 다름. 몫이 소수점까지 나옴.
-		System.out.println("double " + c + " / double " + d + " = " + (c / d)); 
-		System.out.println();
+		System.out.println( "double " + c + " / double " + d + " = " + (c / d)); 
+		System.out.println("------");
 
 		// 모든 산술 연산자의 결과 자료형은 두 피연산자의 자료형 중 더 크기가 큰 자료형으로 반환된다.
 		System.out.println(10 / 3);     // 정수/정수 = 정수 3 >> int / int = int

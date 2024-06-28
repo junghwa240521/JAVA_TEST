@@ -16,6 +16,15 @@ public class Operator03 {
 		System.out.println(true && true); // 단독으로 쓰이는 경우는 거의 없음
 
 		// 19 보다 크고(초과), 60 보다 작은(미만)
+		
+		int ageBig = 60;
+//		ageBig > 19 && ageBig < 60 ;
+		System.out.println((ageBig > 19)&&(ageBig < 60));
+		System.out.println("-------------------");
+		
+		
+		
+		
 		int var = 45;
 		System.out.println((var > 19) && (var < 60)); // 비교연산자와 같이 쓰이는 경우가 많음
 		System.out.println();
@@ -37,7 +46,7 @@ public class Operator03 {
 
 		int sum = 10 + 20 * 3;
 		System.out.println(" 10 + 20 * 3 = " + sum);
-		System.out.println();
+		System.out.println("+++++++++++++++");
 		
 		// 덧셈 먼저
 		sum = (10 + 20) * 3;
@@ -64,7 +73,7 @@ public class Operator03 {
 		// 기존 n에 1을 추가하기
 		n = n + 1;
 		System.out.println("n = n + 1 >>> " + n);
-		System.out.println();
+		System.out.println("***********************");
 
 		// 복합 대입 연산 활용
 		n2 += 1; // n2 = n2 + 1
@@ -89,17 +98,17 @@ public class Operator03 {
 		// 복합 대입 연산 활용	
 		n2 *= 2;
 		System.out.println("n2 = n2 * 2 >>> " + n2);
-		System.out.println();
+		System.out.println("==========================");
 
 		// 기존 n을 5로 나누기
-		n = n / 5;
+		n = n / 5;   //18
 		System.out.println("n = n / 5 >>> " + n);
 		System.out.println();
 
 		// 복합 대입 연산 활용
 		n2 /= 5;		
 		System.out.println("n2 = n2 / 5 >>> " + n2);
-		System.out.println();
+		System.out.println("**********************");
 
 		// 기존 n을 10으로 초기화, 3으로 나눈 나머지 값
 		n = 10;
@@ -111,7 +120,7 @@ public class Operator03 {
 		n2 = 10;
 		n2 %= 3;
 		System.out.println("n2 = n2 % 3 >>> " + n2);
-		System.out.println();
+		System.out.println("====================================");
 
 
 		/*
@@ -209,6 +218,21 @@ public class Operator03 {
 		// true(통과), false(거절)
 		// Operator02에서는 true / false의 값만 확인하였으나, 조건 연산자를 통해 비교된 값을 원하는 형태의 결과로 보여줄 수 있다.
 
+		
+		int ageYou = 30;
+		
+		
+		System.out.println((ageYou>19)&&(ageYou<60));
+		System.out.println("19세 이상이면 통과"+ ageYou );
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		int age = 30;
 		String ageResult = "";
 		

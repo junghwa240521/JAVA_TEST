@@ -1,11 +1,12 @@
-package java_01;
+package java_01; //패키지선언
 
 import java.util.Scanner;
 
-public class Switch03 {
+public class Switch03 {   //클래스 선언
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {   //메소드선언
 
+		//System.out.println();메소드호출,실행문
 		Scanner sc = new Scanner(System.in);
 
 		// -----------------------------------------------------
@@ -16,16 +17,16 @@ public class Switch03 {
 		// 정수 1 연산자 정수2 로 계산 및 결과 출력
 		// -----------------------------------------------------
 
-		System.out.print("정수1 : ");
+		System.out.println("정수1 : ");
 		int num1 = sc.nextInt();
-
-		System.out.print("연산자를 선택하세요. [ +, -, *, / ] : ");
+		
+		System.out.println("연산자를 선택하세요. [ +, -, *, / ] : ");
 		String oper = sc.next();
 
-		System.out.print("정수 2 : ");
+		System.out.println("정수 2 : ");
 		int num2 = sc.nextInt();
 
-
+		System.out.printf(num1 + oper + num2, "");
 
 		sc.close();
 

@@ -1,5 +1,7 @@
 package java_01;
 
+import java.util.Scanner;
+
 public class IfEx02 {
 
 	public static void main(String[] args) {
@@ -21,7 +23,17 @@ public class IfEx02 {
 
 
 		// 1. if
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+		int age = 10;
+		String ageResult = "";
 
+		ageResult = (age >= 19 && age < 60) ? "통과" : "거절";
+		if(age)
+		System.out.println("회원님의 나이는 " + age + "세이므로, " + ageResult + " 입니다.");
+		System.out.println();
 
 
 		// 2. if-else

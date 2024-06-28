@@ -13,7 +13,7 @@ public class ScannerEx {
 
 		System.out.print("정수를 입력해 주세요. : ");
 		
-		// nextlt() : 정수 하나를 입력받는 메소드
+		// nextlnt() : 정수 하나를 입력받는 메소드
 		int a = sc.nextInt();
 		
 		System.out.print("이름을 입력해 주세요. : ");

@@ -1,5 +1,7 @@
 package java_01;
 
+import java.util.Scanner;
+
 public class IfEx03 {
 
 	public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class IfEx03 {
 		// 60점 이상이면, D
 		// 60점 미만이면, F
 		// -----------------------------------------------------
-		
+		Scanner sc = new Scanner(System.in);
 		
 		
 		// -----------------------------------------------------
@@ -21,7 +23,21 @@ public class IfEx03 {
 		// 
 		// [ 결과 예시 ] 1 은 one 입니다.
 		// -----------------------------------------------------
-
+		System.out.println("정수:");
+		
+		int num = sc.nextInt();
+		
+		String resultNum = "";
+		
+		if(num ==5) {
+			resultNum="one";
+		}else {
+			
+		}
+		
+		
+		
+		
 
 	}
 

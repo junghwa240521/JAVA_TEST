@@ -32,16 +32,35 @@ public class Operator02_2 {
 		
 		// 사용자 나이 입력 - 19세 이상 통과, 미만 거절
 		// true(통과), false(거절)
-		int age = 30;
-		boolean ageResult;
 		
-		ageResult = age >= 19;
 		
-		System.out.println("나이 : " + age);
-		System.out.println("결과 : " + ageResult);
-
-
+//		int age = 30;
+//		boolean ageResult;
+//		
+//		ageResult = age >= 19;
+//		
+//		System.out.println("나이 : " + age);
+//		System.out.println("결과 : " + ageResult);
+//
+//
+		
+		
 		// 숫자 입력 - 짝수인지, 아닌지를 판단
+		
+		
+		int num = 100;
+		boolean numResult;
+		
+		numResult = num % 2==0;
+		
+		
+		System.out.println("------------");
+		System.out.println(numResult);
+		
+		
+		
+		
+		
 		int varNum = 101;
 		int varResult = varNum % 2;
 		boolean numFlag;
@@ -51,3 +70,6 @@ public class Operator02_2 {
 		System.out.println(varNum + " 는 짝수입니다. >>>>>> " + numFlag);
 	}
 }
+
+
+
