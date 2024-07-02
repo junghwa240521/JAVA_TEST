@@ -22,27 +22,46 @@ public class IfEx02 {
 		// -----------------------------------------------------
 
 
+		Scanner sc = new Scanner(System.in);
+
 		// 1. if
 		
-		Scanner sc = new Scanner(System.in);
 		
+		System.out.println("if 나이 : ");
+		int age1 = sc.nextInt();
 		
-		int age = 10;
-		String ageResult = "";
-
-		ageResult = (age >= 19 && age < 60) ? "통과" : "거절";
-		if(age)
-		System.out.println("회원님의 나이는 " + age + "세이므로, " + ageResult + " 입니다.");
-		System.out.println();
-
+		if(age1>=19 && age1>=60) {
+			System.out.println("통과");
+		}
+		if(!(age1>= 19 && age1>60)) {
+			System.out.println("거절");
+		}
+		
 
 		// 2. if-else
-
-
+		System.out.println("if-else 나이 : ");
+		int age2 = sc.nextInt();
+		
+		if(age2>=19 && age2>60) {
+			System.out.println("통과");
+			
+		}else {
+			System.out.println("거절");
+		}
 
 		// 3. if-else if
 
-
+		System.out.println("if-else 나이 : ");
+		int age3 = sc.nextInt();
+		
+		if(age3>=19 && age3>60) {
+			System.out.println("통과");
+		}
+		else if(age3<19 || age3<60) {
+			System.out.println("거절");
+		}
+		
+		sc.close();
 	}
 
 }
