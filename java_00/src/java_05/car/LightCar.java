@@ -8,6 +8,11 @@ public class LightCar extends Car{
 		
 	}
 	
+	public LightCar(String model, int wheel, int sheet, String fuel, double arg5) {
+		super(model, wheel, sheet, fuel);
+		this.discountOffer = arg5;
+	}
+	
 	public String carInfo() {
 		String result = "";
 		
