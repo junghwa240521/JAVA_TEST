@@ -17,19 +17,20 @@ public class MemberArrayList {
 		ArrayList<String> memberArr = memberListInsert();
 		memberListSelect(memberArr);
 
-		
+
 	}
 
 	// 다섯명의 회원명을 입력받아 ArrayList 생성할 method
-	public static void ArrayList<String> memberListInsert() {
+	public static ArrayList<String> memberListInsert() {
+
 		ArrayList<String> memberArr = new ArrayList<String>();
 
 		String name = "";
-		
+
 		while(true) {
 			System.out.print("이름이 뭐예요: ");
 			name = sc.next();
-			
+
 			if ("그만".equals(name)) {
 				break;
 			}else {
@@ -37,14 +38,14 @@ public class MemberArrayList {
 			}
 		}
 		System.out.println("===회원정보 입력 완료===");
-		
+
 		return memberArr;
-					
-		}
-	
-	
-	
-	
+
+	}
+
+
+
+
 	// 생성된 회원정보를 출력하는 method
 
 	public static void memberListSelect(ArrayList<String> args) {
