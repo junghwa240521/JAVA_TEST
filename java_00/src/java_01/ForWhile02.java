@@ -1,4 +1,4 @@
-package java_00;
+package java_01;
 
 import java.util.Scanner;
 
@@ -12,7 +12,7 @@ public class ForWhile02 {
 		int sum = 0;		// 합계
 		
 		for (int i=0; i<5; i++) {
-			System.out.print(i + "] 숫자를 입력해 주세요 : ");
+			System.out.print(i+1 + "] 숫자를 입력해 주세요 : ");
 			int n = sc.nextInt();
 			
 			// 음수일 때만, 합계에 누적하지 않고 넘어가기
