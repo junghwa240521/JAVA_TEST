@@ -7,7 +7,6 @@ public class MemberInfo {
 		// Member 객체 생성 - 기본 생성자
 		Member member = new Member();
 		
-		public static void classMemberInfo() {
 		member.setMemberId("junghwa");
 		member.setMemberName("현정화");
 		member.setMemberEmail("gmjunghwa@gmaiol.com");
@@ -39,11 +38,11 @@ public class MemberInfo {
 		System.out.println("회원5 ]" + mem5.getMemberId() + " :: " +mem5.getMemberName());
 		
 		//드라마 오징어게임 시즌1 출연자 정보 호출
-		MemberDrama.Memberinfo();
+		MemberDrama.dramaMemberInfo();
 		
 		// 여러명의 멤버 생성 (회원 아이디와 이름으로만 구성)
 
 		}
-	}
+	
 
 }
