@@ -111,20 +111,23 @@ public class ParkingService {
 
 	public void outParking(){
 
-		String[][] parkingSpace = parkingDAO.selectParking(); 
-
-
 		System.out.print("주차 위치를 입력해 주세요. : ");
 		String locationStr = sc.next();
-
-
-
-		parkingDAO.deleteParking(locationStr);
-		System.out.println("출차 완료!! 안녕히 가세요");
-
+		
+		boolean flag = parkingDAO.deleteParking(locationStr);
+		
+		System.out.println(">>>>>>>>>>" + flag);
+		
+		//비교 대상의 데이터 타입이 boolean(true 혹은 false)일 경우,
+		//if(flag == true) 구문 ==> if(flag)와 동일하게 사용 가능
+		//if(flag == false) 구문 ==> if(!flag)와 동일하게 사용 가능
+		
+		if(flag) {
+			System.out.println("출차 완료!! 안녕히가세요.");
+		}else {
+			System.out.println("주차된 차량이 없습니다 !! 안녕히 가세요.");
+		}
 	}
-
-
 
 //		if(count ==parkingDAO.ROW *parkingDAO.COL) {
 //			System.out.println("차량이 존재하지 않습니다.");

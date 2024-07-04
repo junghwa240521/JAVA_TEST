@@ -18,6 +18,7 @@ public class ParkingDAO {
 
 
 		int patkingCnt = 0;
+		
 		for (int i = 0; i<parkingNum.length; i++) {
 			for(int j = 0; j<parkingNum[i].length; j++) {
 				patkingCnt++;
@@ -40,14 +41,21 @@ public class ParkingDAO {
 
 
 
-	public void deleteParking(String location) {
+	public boolean deleteParking(String location) {
+		
+		boolean flag = true;
+		
 		for(int i=0; i<parkingNum.length; i++) {
 			for(int j=0; j<parkingNum[i].length; j++) {
-				if(location.equals(parkingNum[i][j])) {
+				if(location.equals(parkingNum[i][j]) &&  parkingSpace[i][j] != null) {
 					parkingSpace[i][j] = null;
+					return true;
+				} else {
+					flag = false;
 				}
 			}
 		}
+		return flag;
 	}
 
 	public String [][] selectParking() {
